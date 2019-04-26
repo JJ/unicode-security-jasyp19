@@ -120,13 +120,17 @@ say "א".uniprop("script"); # Hebrew
 		  </code></pre>
 		</section>
 		
-		<section><h1>Más tablas: confusiones entre alfabetos</h1>
-
-		  
+		<section data-background='img/confusables-ws.png'>
+		  <h1>Más tablas: confusiones entre alfabetos</h1>
+ 
 		</section>
 
 		<section>
 		  <h1>Confusión por scripts completos</h1>
+
+		  <pre><code>say "Confuso" if  whole-script-confusable("Cyrillic", "JASƳP");
+say "Cønfusø" if  whole-script-confusable("Latin", "ЈАЅҮР")
+		  </code></pre>
 		</section>
 	      </section>
 	      
