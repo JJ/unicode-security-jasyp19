@@ -52,6 +52,40 @@
 		<h1 class='fragment'>¿Es ѕҽℊᴜꭈဝ?</h1>
 		<aside class='notes'>Cada una de las letras del seguro son de un script diferente, y todas figuran como "confundibles"</aside>
 	      </section>
+
+	      <section>
+		<section><pre><code>say  ("ѕҽℊᴜꭈဝ".comb ==>
+      map( { ($^þ, $^þ.uniname, $^þ.uniprop("script")) 
+           ==> join( " → ") }  
+         ) ==> join("\n") );</code></pre>
+		</section>
+		<section><h1>Perl 6 mola mucho</h1></section>
+		<section><h1>JJ Merelo</h1>
+		  <h2><code>@jjmerelo</code> <a href='https://github.com/JJ'><code>github.com/JJ</code></a></h2>
+		  <aside class='notes'>Trabajo en la universidad, en la documentación de Perl 6, y todo ese rollo</aside>
+		</section>
+
+		<section><h1>Mejor soporte de Unicode</h1>
+		  <h2 class='fragment'>ever</h2>
+		  <pre class='fragment'><code>say ٦٦²³; # 22 ** 23
+say ↈ + ১; # 100001
+		  </code></pre>
+		</section>
+
+		<section><h1><em>Caracteres</em> ⇒ <em><strong>codepoints</strong></em></h1>
+
+		    <pre><code>say "Þor".ords; # (222 111 114)</code></pre>
+		</section>
+		<section><h1>👁 ⇒ <strong><em>grafemas</em></strong> </h1>
+
+		  <pre><code>my $los-gonzález-cañas = '👨‍👩‍👧‍👦🏿';
+with $los-gonzález-cañas {
+    .ords.say;       # (128104 8205 128105 8205 128103 8205 128102 127999)
+    .comb.elems.say; # 1
+}</code></pre>
+		  
+		</section>
+	      </section>
 	      
 	      <section><h2>Credits</h2>
 		<ul class='credits'>
