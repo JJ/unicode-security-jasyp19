@@ -1,5 +1,7 @@
 #!/usr/bin/env perl6
 
+use v6;
+
 my $los-gonzález-cañas = '👨‍👩‍👧‍👦🏿';
 with $los-gonzález-cañas {
     .ords.say;
