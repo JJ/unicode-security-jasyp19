@@ -4,5 +4,5 @@
 font-family: 'MPH 2B Damase';
 font-style: normal;
 font-weight: normal;
-src: local('MPH 2B Damase'), url('damase_v.2.woff') format('woff');
+src: local('MPH 2B Damase'), url('../lib/damase_v.2.woff') format('woff');
 }
