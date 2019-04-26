@@ -4,4 +4,8 @@ use v6;
 
 use Unicode::Security;
 
-say "Me confundes" if confusables("ѕҽℊᴜꭈဝ","seguro");
+say "Me confundes" if confusable("ѕҽℊᴜꭈဝ","seguro");
+
+=output
+Me confundes
+
