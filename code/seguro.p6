@@ -1,5 +1,7 @@
 #!/usr/bin/env perl6
 
+use v6;
+
 say  ("ѕҽℊᴜꭈဝ".comb ==>
       map( { ($^þ, $^þ.uniname, $^þ.uniprop("script"))
 	     ==> join( " → ") }
