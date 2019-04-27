@@ -1,0 +1,20 @@
+{
+  "authors" : [
+    "JJ Merelo"
+  ],
+  "build-depends" : [ ],
+  "depends" : [
+    "Unicode::Security"
+  ],
+  "description" : "Check scripts for confusables and mixed script",
+  "license" : "Artistic-2.0",
+  "name" : "Unicode::Security examples",
+  "perl" : "6.d",
+  "provides" : { },
+  "tags" : [
+    "unicode",
+    "security"
+  ],
+  "test-depends" : [ ],
+  "version" : "0.0.2"
+}
